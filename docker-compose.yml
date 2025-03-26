@@ -4,7 +4,7 @@ services:
   nginx:
     image: nginx:${VERSION}
     ports:
-      - "80:80"
+      - "8077:80"
     volumes:
       - nginx_data:/usr/share/nginx/html  # optional: to persist/override HTML
     deploy:

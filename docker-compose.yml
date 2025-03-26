@@ -14,8 +14,6 @@ services:
           - node.role == worker  # or manager, depending on your setup
     networks:
       - web
-    env_file:
-      - ./stack.env
 
 volumes:
   nginx_data:

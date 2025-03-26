@@ -14,3 +14,10 @@ services:
           - node.role == worker  # or manager, depending on your setup
     networks:
       - web
+
+volumes:
+  nginx_data:
+
+networks:
+  web:
+    external: false  # Set to true if you already have a 'web' network created
